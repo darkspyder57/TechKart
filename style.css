@@ -1,0 +1,436 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	background-color: #000;
+}
+
+.search-bar {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: auto;
+}
+
+.search-bar input[type="text"] {
+	padding: 10px;
+	border: none;
+	outline: 0;
+	border-radius: 5px;
+	margin-right: 10px;
+	font-size: 12px;
+	margin: 0px 8px 0px 0px;
+}
+
+.search-bar button {
+	background-color: rgb(237, 189, 42);
+	color: black;
+	border: none;
+	border-radius: 5px;
+	padding: 0 10px 0 10px;
+	/* cursor: pointer; */
+	transition: background-color 0.15s;
+	font-size: 12px;
+}
+
+.search-bar button:hover{
+	opacity: 0.7;
+}
+
+.search-bar button:active{
+	opacity: 0.5;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+}
+
+nav li {
+	margin: 0 10px;
+}
+
+nav a {
+	color: rgb(237, 189, 42);
+	transition: color 0.15s;;
+}
+
+nav a:hover{
+	color: yellow;
+	text-decoration: none;
+}
+
+nav a:active{
+	opacity: 0.7;
+}
+
+main {
+	margin: 20px;
+}
+
+#carouselExampleControls{
+    background-color:black;
+	margin-top: 50px;
+}
+
+.top{
+    position: sticky;
+	z-index: 100;
+    top: 0px;
+    display: flex;
+    background-color: black;
+    background-color:black;
+	color: #fff;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 50px;
+    padding: 50px;
+}
+
+.top h1{
+	color: rgb(237, 189, 42);
+}
+
+ .loginbox{
+	width: 320px;
+	height: 420px;
+	background: #05050588;
+	color: #fff;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+	padding: 60px 30px;
+	padding-bottom: 10px;
+	border-radius: 15px;
+	border-width: 0px;
+	box-shadow: 2px 3px 4px rgb(16, 199, 236), -2px -3px 4px rgb(26, 216, 140);
+ }
+
+.avatar{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	position: absolute;
+	top: -50px;
+	left: calc(50% - 50px);
+	box-shadow: 2px 2px 3px rgb(0, 255, 255), -2px -2px 3px rgb(255, 0, 0);
+}
+
+.loginbox h1{
+	color: rgb(183, 10, 10);
+	text-shadow: 1px 2px 3px yellow;
+	font-size: 36px;
+}
+
+.loginbox p{
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+}
+
+.loginbox input{
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.loginbox input[type="text"], input[type="password"]{
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	font-size: 16px;
+}
+
+.loginbox input[type="submit"]{
+	border: none;
+	outline: none;
+	height: 40px;
+	background: #fb2525;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 20px;
+}
+ .slideImg{
+
+	/* display: flex; */
+	justify-content: center;
+	align-items:center ;
+	margin-left: auto;
+	margin-right: auto;
+} 
+
+.register{
+	background-color: rgba(0,0,0,0.5);
+	width: 150%;
+	font-size: 18px;
+	border-radius: 10px;
+	border: 1px solid rgba(255,255,255,0.3);
+	box-shadow: 2px 2px 15px
+	rgba(0,0,0,0.3);
+	color: #fff;
+}
+
+.form #register{
+	/* margin: 50px; */
+	margin:50%;
+}
+
+ .carousel-inner{
+	/* width: 	600px; */
+	height: 500px;
+	object-fit: cover;
+	border-radius: 20px;
+	margin-bottom: 40px;
+} 
+
+.login-forget a{
+	color: rgb(237, 189, 42);
+	transition: color 0.15s;
+}
+
+.login-forget a:hover{
+	color: yellow;
+	text-decoration: none;
+}
+
+.login-forget input[type=submit]{
+	transition: opacity 0.15s;
+}
+
+.login-forget input[type=submit]:hover{
+	opacity: 0.9;
+}
+
+.login-forget input[type=submit]:active{
+	opacity: 0.7;
+}
+
+.item-group{
+	height: 1600px;
+	width: 100%;
+	background-color: rgb(253, 252, 252);
+	display: flex;
+	padding: 20px 30px 20px 30px;
+	border-radius: 15px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+.item-parent h1{
+	font-family: Arial, Helvetica, sans-serif;
+	color: rgb(237, 189, 42);
+	text-align: center;
+	text-shadow: 1px 2px 3px rgb(255, 0, 170);
+}
+
+.item-card{
+	width: 300px;
+	height: 500px;
+	margin-left: 60px;
+	margin-top: 40px;
+}
+
+.item-card button{
+	border: none;
+	border-radius: 25px;
+	background-color: #fb9725;
+	width: 300px;
+	color: white;
+	outline: 0;
+	box-shadow: 1px 2px 3px grey;
+}
+
+.item-card button:hover{
+	background-color: #f88604;
+}
+
+.item-card button:active{
+	opacity: 0.7;
+}
+
+.ig1{
+	width: 33.33%;
+}
+
+.ig2{
+	width: 33.33%;
+}
+.ig3{
+	width: 33.33%;
+}
+
+.contact{
+	font-family: Arial, Helvetica, sans-serif;
+	margin-left: 20px;
+	display: inline;
+}
+
+.contact-title{
+	color: rgb(237, 189, 42);
+	display: inline;
+	margin-right: 10px;
+}
+
+.contact i{
+	font-size: 30px;
+	cursor: pointer;
+	color: #363535;
+	margin-right: 10px;
+}
+
+.insta{
+	transition: color 0.15s;
+}
+
+.insta:hover{
+	color: rgb(255, 0, 157);
+}
+
+.insta:active{
+	opacity: 0.5;
+}
+
+.gmail{
+	transition: color 0.15s;
+}
+
+.gmail:hover{
+	color: red;
+}
+
+.gmail:active{
+	opacity: 0.5;
+}
+
+.githun{
+	transition: color 0.15s;
+}
+
+.github:hover{
+	color: white;
+}
+
+.github:active{
+	opacity: 0.5;
+}
+
+.linkedin{
+	transition: color 0.15s;
+}
+
+.linkedin:hover{
+	color: rgb(0, 60, 255);
+}
+
+.linkedin:active{
+	opacity: 0.5;
+}
+
+.progression-bar{
+	position: fixed;
+	width: 100%;
+	height: 1vh;
+
+}
+
+.filler{
+	width: 0%;
+	height: 100%;
+	background-image: linear-gradient(to right, rgb(255, 230, 0), rgb(0, 255, 187));
+}
+
+.cart-parent{
+	width: 75.76%;
+	display: flex;
+	margin-left: 10%;
+	margin-top: 50px;
+	margin-bottom: 10px;
+	/* border: red solid 1px; */
+	/* background-color: #fb9725; */
+	/* border: rgb(0, 0, 0) solid 1px; */
+	padding: 20px;
+}
+
+table{
+	align-items: center;
+	width: 100%;
+}
+
+th{
+	background-color: #000000;
+	color: yellow;
+	padding: 10px;
+}
+
+.img-cart{
+	display: flex;
+}
+
+td img{
+	width: 150px;
+}
+
+td{
+	padding-top: 20px;
+}
+td p{
+	margin-left: 10px;
+	width: 200px;
+}
+
+tr input{
+	width: 50px;
+}
+
+tr i{
+	color: black;
+}
+
+td button{
+	float: inline-end;
+	padding: 10px 20px 10px 20px;
+	border: none;
+	border-radius: 25px;
+	background-color: black;
+	color: yellow;
+	box-shadow: 2px 3px 4px rgb(81, 80, 80);
+	cursor: pointer;
+	outline: 0;
+	transition: opacity 0.15s;
+}
+
+td button:hover{
+	opacity: 0.7;
+}
+
+td button:active{
+	opacity: 0.5;
+}
+
+td button i{
+	color: yellow;
+}
+
+.additional-payment{
+	width: 20%;
+	background-color: #fff;
+	color: #000;
+	float: inline-end;
+}
+
+footer{
+	width: 100%;
+	background-color: black;
+	display: flex;
+}
+
+footer img{
+	width: 250px;
+	height: 250px;
+}
+

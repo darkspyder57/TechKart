@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cart</title>
+	<link rel="icon" href="logo3.png" type="image/icon type">
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/a5d62c16e1.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+</head>
+<body>
+	<nav class="top">
+        
+        <a href="index.html"><img src="cmplogo.png" style="width: 280px;"></a>
+        <h1>My Cart <i class="fa-solid fa-bag-shopping"></i></h1>
+        
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
+                <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        
+
+</nav>
+
+	<div class="cart-parent">
+        <table>
+            <tr>
+              <th>Product</th>
+              <th>Quantity</th>
+              <th>Price</th>
+              <th>Sub-total</th>
+            </tr>
+            <tr>
+              <td class="img-cart">
+                <img src="item1.jpeg"> 
+                <p>Asus Rog Delta S Animate Gaming Headset (Anime Matrix Display,Hi-Fi Ess 9281 Quad Dac,Ai Noise-Canceling Mic,7.1 Surround Sound,50Mm Drivers,for Pc,Switch,Ps4,Ps5,and Mobile Devices)- Black-Over Ear</p>
+                <a href=""><i class="fa-solid fa-trash-can"></i></a>
+              </td>
+              <td><input type="number" value="1"></td>
+              <td>₹25,244</td>
+              <td>₹25,244</td>
+            </tr>
+
+            <tr>
+                <td class="img-cart">
+                    <img src="item2.jpeg"> 
+                    <p>Alienware Low-Profile RGB Gaming Keyboard AW510K Light, Alienfx Per Key RGB Lighting, Media Controls and USB Passthrough, Cherry MX Low Profile Red Switches, Lunar Light with Mouse</p>
+                    <br>
+                    <a href=""><i class="fa-solid fa-trash-can"></i></a>
+                  </td>
+                <td><input type="number" value="1"></td>
+                <td>₹34,343</td>
+                <td>₹34,343</td>
+              </tr>
+
+              <tr>
+                <td class="img-cart">
+                    <img src="item3.jpeg"> 
+                    <p>Samsung T7 1TB Up to 1,050MB/s USB 3.2 Gen 2 (10Gbps, Type-C) External Solid State Drive (Portable SSD) Red (MU-PC1T0R)</p>
+                    <br>
+                    <a href=""><i class="fa-solid fa-trash-can"></i></a>
+                  </td>
+                <td><input type="number" value="1"></td>
+                <td>₹12,191</td>
+                <td>₹12,191</td>
+              </tr>
+
+              <tr>
+                <th class="additional-payment">Tax</th>
+                <td>2%</td>
+              </tr>
+              <tr>
+                <th class="additional-payment">GST</th>
+                <td>5%</td>
+              </tr>
+              <tr>
+                <th class="additional-payment">Grand Total</th>
+                <td>₹76,874.23</td>
+              </tr>
+              <tr>
+                <td>
+                  <button onclick="checkOut()">Checkout <i class="fa-solid fa-money-check-dollar"></i></button>
+                </td>
+              </tr>
+          </table>
+    </div>
+
+
+
+	<footer>
+        <a href="index.html"><img src="cmplogo.png"></a>
+        <div class="contact">
+
+            <h1 class="contact-title">Contact me on</h1>
+            <a href="https://www.instagram.com/dark_spyder2k23/"><i class="fa-brands fa-instagram insta"></i></a>
+            <a href="mailto:mohnishkumar57@gmail.com"><i class="fa-regular fa-envelope gmail"></i></a>
+            <a href="https://github.com/darkspyder57"><i class="fa-brands fa-github github"></i></a>
+            <a href="https://www.linkedin.com/in/mohnish-kumar-mukkirla-7a03742b6/"><i class="fa-brands fa-linkedin linkedin"></i></a>
+          </div>
+		<p style="margin-left: 42%; color: rgb(255, 242, 0);">&copy; 2023 Developed by Dark_Spyder</p>
+	</footer>
+
+  <script>
+    function checkOut() {
+      location.replace("paygate.html");
+    }
+  </script>
+</body>
+</html>

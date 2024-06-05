@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link rel="icon" href="logo3.png" type="image/icon type">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            width: 100%;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        .form-container, .order-summary {
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px;
+            flex: 1;
+        }
+        .form-container {
+            flex-basis: 60%;
+        }
+        .order-summary {
+            flex-basis: 35%;
+        }
+        h2 {
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-group .optional {
+            font-size: 0.9em;
+            color: #888;
+        }
+        .order-summary table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        .order-summary table, .order-summary th, .order-summary td {
+            border: 1px solid #ddd;
+        }
+        .order-summary th, .order-summary td {
+            padding: 10px;
+            text-align: left;
+        }
+        .order-summary th {
+            background-color: #f9f9f9;
+        }
+        .order-summary td:last-child {
+            text-align: right;
+        }
+        .paypal-button {
+            display: flex;
+            align-items: center;
+        }
+        .paypal-button input {
+            margin-right: 10px;
+        }
+        .paypal-button img {
+            max-width: 100px;
+            height: auto;
+        }
+        .privacy-note {
+            font-size: 0.9em;
+            color: #555;
+            margin-top: 20px;
+        }
+        .privacy-note button{
+            margin-top: 10px;
+            padding: 10px 40px 10px 40px;
+	        border: none;
+	        border-radius: 5px;
+	        background-color: rgb(247, 105, 4);
+	        color: rgb(255, 255, 255);
+	        box-shadow: 2px 3px 4px rgb(81, 80, 80);
+	        cursor: pointer;
+	        outline: 0;
+        }
+
+        .privacy-note button:hover{
+            opacity: 0.9;
+        }
+
+        .privacy-note button:active{
+            opacity: 0.7;
+        }
+        @media (max-width: 768px) {
+            .form-container, .order-summary {
+                flex-basis: 100%;
+            }
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/a5d62c16e1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="container">
+    <div class="form-container">
+        <h2>Billing Details</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="first-name">First name <span>*</span></label>
+                <input type="text" id="first-name" name="first-name" required>
+            </div>
+            <div class="form-group">
+                <label for="last-name">Last name <span>*</span></label>
+                <input type="text" id="last-name" name="last-name" required>
+            </div>
+            <div class="form-group">
+                <label for="company-name">Company name <span class="optional">(optional)</span></label>
+                <input type="text" id="company-name" name="company-name">
+            </div>
+            <div class="form-group">
+                <label for="country">Country <span>*</span></label>
+                <select id="country" name="country" required>
+                    <option value="India">India</option>
+                    <!-- Add more country options as needed -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="street-address">Street address <span>*</span></label>
+                <input type="text" id="street-address" name="street-address" placeholder="House number and street name" required>
+            </div>
+            <div class="form-group">
+                <label for="apartment">Apartment, suite, unit etc. <span class="optional">(optional)</span></label>
+                <input type="text" id="apartment" name="apartment" placeholder="Apartment, suite, unit etc. (optional)">
+            </div>
+            <div class="form-group">
+                <label for="city">Town / City <span>*</span></label>
+                <input type="text" id="city" name="city" required>
+            </div>
+            <div class="form-group">
+                <label for="state">State / County <span>*</span></label>
+                <input type="text" id="state" name="state" required>
+            </div>
+            <div class="form-group">
+                <label for="postcode">Postcode / ZIP <span>*</span></label>
+                <input type="text" id="postcode" name="postcode" required>
+            </div>
+        </form>
+    </div>
+    
+    <div class="order-summary">
+        <h2>Your Order</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Asus Rog Delta S Animate Gaming Headset (Anime Matrix Display,Hi-Fi Ess 9281 Quad Dac,Ai Noise-Canceling Mic,7.1 Surround Sound,50Mm Drivers,for Pc,Switch,Ps4,Ps5,and Mobile Devices)- Black-Over Ear x 1</td>
+                    <td>₹25,244</td>
+                </tr>
+                <tr>
+                    <td>Alienware Low-Profile RGB Gaming Keyboard AW510K Light, Alienfx Per Key RGB Lighting, Media Controls and USB Passthrough, Cherry MX Low Profile Red Switches, Lunar Light with Mouse x 1</td>
+                    <td>₹34,343</td>
+                </tr>
+                <tr>
+                    <td>Samsung T7 1TB Up to 1,050MB/s USB 3.2 Gen 2 (10Gbps, Type-C) External Solid State Drive (Portable SSD) Red (MU-PC1T0R) x 1</td>
+                    <td>₹12,191</td>
+                </tr>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>₹71,778</td>
+                </tr>
+                <tr>
+                    <td>Total(inclu. GST+tax)</td>
+                    <td>₹76,874.23</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="paypal-button">
+            <input type="radio" id="paypal" name="payment-method" value="paypal" checked>
+            <label for="paypal">PayPal</label>
+        </div>
+        <p>Pay via PayPal; you can pay with your credit card if you don’t have a PayPal account.</p>
+        <div class="paypal-button">
+            <img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_111x69.jpg" alt="PayPal">
+        </div>
+        <div class="privacy-note">
+            Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our privacy policy.
+            <button>Place the Order <i class="fa-regular fa-credit-card"></i></button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
