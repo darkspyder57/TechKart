@@ -63,6 +63,21 @@ nav a:active{
 	opacity: 0.7;
 }
 
+.cart-count{
+	font-size: 10px;
+	background-color: rgb(237, 189, 42);
+	color: #000;
+	padding: 0 5px;
+	vertical-align: top;
+	border-radius: 50%;
+	transition: background-color 0.15s;
+	margin-bottom: 3px;
+}
+
+.cart-count:hover{
+	background-color: yellow;
+}
+
 main {
 	margin: 20px;
 }
